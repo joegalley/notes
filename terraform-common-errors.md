@@ -1,5 +1,6 @@
 # terraform-errors
 
+***
 #### Error description:
 ```Error: 
 Error importing AWS S3 bucket policy: AuthorizationHeaderMalformed: The authorization header is malformed; the region 'us-east-1' is wrong; expecting 'eu-west-1'
@@ -15,3 +16,4 @@ import "my-bucket" (since that's what you specified in the command), but you are
 #### Fix:
 You're probably using the wrong bucket name. Make sure you're using the name of bucket that you actually
 own and you specify the correct region (where that bucket lives) in your command.
+***
